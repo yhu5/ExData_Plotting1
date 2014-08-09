@@ -9,7 +9,7 @@ x <- paste(power.subset$Date,power.subset$Time)
 power.subset$DateTime <- strptime(x,"%d/%m/%Y %H:%M:%S")
 
 ##plotting
-png(file="plot3.png",width = 500, height = 500, units = 'px')
+png(file="plot3.png",width = 480, height = 480, units = 'px')
 library(datasets)
 with(power.subset,plot(DateTime,Sub_metering_1,type="l",ylim=c(0,38),
                        xlab="",ylab="Energy sub metering"))

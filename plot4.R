@@ -9,7 +9,7 @@ x <- paste(power.subset$Date,power.subset$Time)
 power.subset$DateTime <- strptime(x,"%d/%m/%Y %H:%M:%S")
 
 ##plotting
-png(file="plot4.png",width = 500, height = 500, units = 'px')
+png(file="plot4.png",width = 480, height = 480, units = 'px')
 ##png(file="plot4.png")
 library(datasets)
 par(mfrow=c(2,2))
